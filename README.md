@@ -83,15 +83,16 @@ Si deseas salir, escribe: salir
 ☁️ Estado: Parcialmente nublado ⛅
 
 💡 Si deseas salir, escribe 'salir' en la próxima consulta.
+```
 
 ## ⚠️ Manejo de errores
 
 La aplicación maneja distintos escenarios:
 
-❌ Ciudad no encontrada
-❌ Problemas de conexión a internet
-❌ Timeout del servicio
-❌ Respuestas inválidas de la API
+- ❌ Ciudad no encontrada
+- ❌ Problemas de conexión a internet
+- ❌ Timeout del servicio
+- ❌ Respuestas inválidas de la API
 
 Los errores se muestran de forma clara y amigable para el usuario.
 
@@ -99,21 +100,22 @@ Los errores se muestran de forma clara y amigable para el usuario.
 
 El proyecto está organizado en capas para facilitar su mantenimiento y escalabilidad:
 
-main.py → Maneja la interacción con el usuario
-servicio.py → Gestiona la lógica de negocio y llamadas a la API
-formato.py → Convierte los datos en texto legible
-config.py → Centraliza la configuración
+- main.py → Maneja la interacción con el usuario
+- servicio.py → Gestiona la lógica de negocio y llamadas a la API
+- formato.py → Convierte los datos en texto legible
+- config.py → Centraliza la configuración
 
 Esta separación permite:
 
-Mejorar la legibilidad
-Facilitar pruebas
-Escalar el proyecto a futuro (API, GUI, etc.)
+- Mejorar la legibilidad
+- Facilitar pruebas
+- Escalar el proyecto a futuro (API, GUI, etc.)
 
 ## 🔧 Tecnologías utilizadas
-Python
-Requests (para consumo de APIs)
-Open-Meteo API (datos meteorológicos)
+
+- Python
+- Requests (para consumo de APIs)
+- Open-Meteo API (datos meteorológicos)
 
 ## 📚 Dependencias y licencias de terceros
 
