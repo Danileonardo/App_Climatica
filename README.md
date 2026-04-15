@@ -40,7 +40,7 @@ clima_app/
 ├─ run.py
 ├─ requirements.txt
 └─ README.md
-
+```
 ---
 
 ## ⚙️ Requisitos
