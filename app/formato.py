@@ -34,34 +34,23 @@ def formatear_fecha(fecha_iso):
         return fecha_iso
 
 
-def formatear_clima(datos):
-    if not datos:
-        return "❌ No se pudo obtener información del clima."
+def formatear_clima(resultado):
+    if not resultado["ok"]:
+        return resultado["error"]
 
-    if "error" in datos:
-        return datos["error"]
-
+    datos = resultado["datos"]
     descripcion_actual = traducir_clima(datos.get("codigo_clima"))
 
     lineas = [
         "",
-        f"📍 Ubicación: {datos.get('ciudad')}, {datos.get('pais')}",
+        f"📍 {datos.get('ciudad')}, {datos.get('pais')}",
         f"🌡️ Temperatura actual: {datos.get('temperatura')}°C",
         f"🌬️ Viento actual: {datos.get('viento')} km/h",
+        f"💧 Humedad actual: {datos.get('humedad')}%",
         f"☁️ Estado actual: {descripcion_actual}",
+        "",
+        "📅 Pronóstico de los próximos 7 días:"
     ]
-
-    lluvia_actual = datos.get("lluvia_actual")
-    chubascos_actuales = datos.get("chubascos_actuales")
-
-    if lluvia_actual is not None:
-        lineas.append(f"🌧️ Lluvia actual: {lluvia_actual} mm")
-
-    if chubascos_actuales is not None:
-        lineas.append(f"🌦️ Chubascos actuales: {chubascos_actuales} mm")
-
-    lineas.append("")
-    lineas.append("📅 Pronóstico de los próximos días:")
 
     for dia in datos.get("pronostico", []):
         descripcion = traducir_clima(dia.get("codigo_clima"))
