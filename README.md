@@ -70,6 +70,7 @@ python run.py
 ```
 
 ## 🧪 Ejemplo de uso
+```text
 🌤️ Bienvenido a la aplicación del clima
 Escribe una ciudad para consultar el clima.
 Si deseas salir, escribe: salir
