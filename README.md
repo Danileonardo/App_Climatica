@@ -152,3 +152,5 @@ En caso de que la aplicación evolucione para utilizar coordenadas precisas del 
 - Se solicitará consentimiento explícito del usuario
 - Se informará claramente el uso de dichos datos
 - Se documentará si existe almacenamiento, duración y eliminación de los datos
+
+📄 Documentación completa: [Google Docs](https://docs.google.com/document/d/1actyIjFGP0JM-KiQdbumeh7w2mzFX4NB/edit)
