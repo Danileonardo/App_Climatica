@@ -27,17 +27,19 @@ Este proyecto está diseñado con fines educativos, aplicando buenas prácticas 
 ---
 
 ## 🧱 Estructura del proyecto
+
+```text
 clima_app/
 │
 ├─ app/
-│ ├─ main.py # Lógica principal (interacción con el usuario)
-│ ├─ servicio.py # Consumo de la API y lógica de negocio
-│ ├─ formato.py # Formateo de datos para mostrar en consola
-│ └─ config.py # Configuración (URLs, timeout)
+│  ├─ main.py          # Lógica principal
+│  ├─ servicio.py      # API y lógica
+│  ├─ formato.py       # Salida en consola
+│  └─ config.py        # Configuración
 │
-├─ run.py # Punto de entrada
-├─ requirements.txt # Dependencias
-└─ README.md # Documentación
+├─ run.py
+├─ requirements.txt
+└─ README.md
 
 ---
 
@@ -50,15 +52,18 @@ clima_app/
 
 ## 📦 Instalación
 
-1. Clonar o descargar el proyecto:
+1. Clonar el repositorio:
 
 ```bash
 git clone <URL_DEL_REPOSITORIO>
 cd clima_app
-Instalar dependencias:
+
+2. Instalar dependencias:
 pip install -r requirements.txt
+
 ▶️ Ejecución
 python run.py
+
 🧪 Ejemplo de uso
 🌤️ Bienvenido a la aplicación del clima
 Escribe una ciudad para consultar el clima.
