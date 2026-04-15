@@ -60,12 +60,16 @@ cd clima_app
 ```
 
 2. Instalar dependencias:
+```bash
 pip install -r requirements.txt
+```
 
 ▶️ Ejecución
+```bash
 python run.py
+```
 
-🧪 Ejemplo de uso
+## 🧪 Ejemplo de uso
 🌤️ Bienvenido a la aplicación del clima
 Escribe una ciudad para consultar el clima.
 Si deseas salir, escribe: salir
@@ -79,7 +83,7 @@ Si deseas salir, escribe: salir
 
 💡 Si deseas salir, escribe 'salir' en la próxima consulta.
 
-⚠️ Manejo de errores
+## ⚠️ Manejo de errores
 
 La aplicación maneja distintos escenarios:
 
@@ -90,7 +94,7 @@ La aplicación maneja distintos escenarios:
 
 Los errores se muestran de forma clara y amigable para el usuario.
 
-🧠 Arquitectura del proyecto
+## 🧠 Arquitectura del proyecto
 
 El proyecto está organizado en capas para facilitar su mantenimiento y escalabilidad:
 
@@ -104,7 +108,8 @@ Esta separación permite:
 Mejorar la legibilidad
 Facilitar pruebas
 Escalar el proyecto a futuro (API, GUI, etc.)
-🔧 Tecnologías utilizadas
+
+## 🔧 Tecnologías utilizadas
 Python
 Requests (para consumo de APIs)
 Open-Meteo API (datos meteorológicos)
