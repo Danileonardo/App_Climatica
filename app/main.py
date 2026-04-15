@@ -169,6 +169,10 @@ def ejecutar_comparacion():
 
 def ejecutar_app():
     print("🌤️ Bienvenido a la aplicación del clima")
+    
+    print("🔒 Aviso de privacidad:")
+    print("- Las ciudades ingresadas se envían a Open-Meteo para obtener datos del clima.")
+    print("- No se almacenan datos ni historial de consultas.\n")
 
     while True:
         mostrar_menu()

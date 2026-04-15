@@ -102,3 +102,53 @@ Escalar el proyecto a futuro (API, GUI, etc.)
 Python
 Requests (para consumo de APIs)
 Open-Meteo API (datos meteorológicos)
+
+## 📚 Dependencias y licencias de terceros
+
+Este proyecto utiliza las siguientes bibliotecas y servicios de terceros:
+
+- **requests** — Licencia Apache-2.0
+- **Open-Meteo API** — Uso gratuito sin API key para fines no comerciales, sujeto a sus términos de uso y condiciones de licencia de datos
+
+Referencias oficiales:
+- Requests (PyPI): https://pypi.org/project/requests/
+- Open-Meteo Terms: https://open-meteo.com/en/terms
+- Open-Meteo Licence: https://open-meteo.com/en/licence
+
+## 🔐 Seguridad y configuración
+
+Actualmente este proyecto no requiere claves de API para funcionar con Open-Meteo.
+
+Sin embargo, si en el futuro se integra otro proveedor que sí requiera credenciales:
+
+- Las claves **no deben almacenarse** en `config.py`
+- Las claves **no deben subirse** al repositorio
+- Deben usarse **variables de entorno** o un archivo `.env` ignorado por Git
+
+Archivos recomendados:
+- `.env.example` → ejemplo de variables
+- `.env` → archivo local no versionado
+- `.gitignore` → debe incluir `.env`
+
+## 🔒 Privacidad y uso de datos
+
+Esta aplicación no almacena de forma persistente la información ingresada por el usuario, como nombres de ciudades o ubicaciones.
+
+Sin embargo, para obtener datos meteorológicos:
+
+- Las consultas de ciudades ingresadas por el usuario se envían a la API de Open-Meteo
+- La API procesa estas consultas para obtener coordenadas geográficas y datos del clima
+
+### Consideraciones
+
+- No se guarda historial de ciudades consultadas
+- No se almacenan coordenadas en archivos ni bases de datos
+- No se recolecta información personal del usuario
+
+### Futuras mejoras
+
+En caso de que la aplicación evolucione para utilizar coordenadas precisas del usuario (por ejemplo, GPS):
+
+- Se solicitará consentimiento explícito del usuario
+- Se informará claramente el uso de dichos datos
+- Se documentará si existe almacenamiento, duración y eliminación de los datos
