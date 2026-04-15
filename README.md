@@ -57,6 +57,7 @@ clima_app/
 ```bash
 git clone <URL_DEL_REPOSITORIO>
 cd clima_app
+```
 
 2. Instalar dependencias:
 pip install -r requirements.txt
